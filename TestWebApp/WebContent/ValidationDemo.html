@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function validate()
+{
+ if(document.frm1.nm.value=="")
+ {
+  alert("Name is required");
+  return false;
+ }
+ else if(document.frm1.gender[0].checked==false && document.frm1.gender[1].checked==false)
+ {
+  alert("Gender is required");
+  return false;
+ }
+ else if(document.frm1.addr.value=="")
+ {
+  alert("Address is required");
+  return false;	
+ }
+ else if(document.frm1.country.selectedIndex==0)
+ {
+  alert("Country is required");
+  return false;
+ }
+ else if(document.frm1.agree.checked==false)
+ {
+  alert("Plz agree the terms and conditions");
+  return false;
+ }
+ else
+ {
+  return true;
+ }
+}
+</script>
+</head>
+<body>
+<form name="frm1" action="test.jsp" method="post" onsubmit="return validate()">
+Name: <input type="text" name="nm"/><br/><br/>
+Gender: <input type="radio" name="gender" value="Male"/>Male
+<input type="radio" name="gender" value="Female"/>Female<br/><br/>
+Date of Birth: <input type="date" name="dob" required/><br/><br/>
+Address: <textarea name="addr" rows="5" cols="25"></textarea><br/><br/>
+Country:
+<select name="country">
+<option>---Select Country---</option>
+<option>INDIA</option>
+<option>AUS</option>
+<option>USA</option>
+<option>UAE</option>
+</select><br/><br/><br/>
+<input type="checkbox" name="agree"/>I Agree
+<input type="submit" value="Register"/>
+</form>
+</body>
+</html>

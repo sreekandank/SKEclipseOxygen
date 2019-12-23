@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organisation>  
+  <company>  
+    <emp>  
+      <name>Sreekandan K</name>  
+      <designation>Trainer</designation>  
+      <age>29</age>  
+    </emp>  
+    <emp>  
+      <name>JSR</name>  
+      <designation>HR Executive</designation>  
+      <age>25</age>  
+    </emp>  
+  </company>  
+  <company>  
+    <emp>  
+      <name>Saravanan M</name>  
+      <designation>Director</designation>  
+      <age>31</age>  
+    </emp>  
+    <emp>  
+      <name>SRK</name>  
+      <designation>Sr. Java Programmer</designation>  
+      <age>23</age>  
+    </emp>
+  </company>
+</organisation>
